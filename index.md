@@ -19,6 +19,8 @@
 - AZ-140T00A-KO-Trainer-Files-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop-Korean-
 - AZ-204T00A-KO-Trainer-Files-Developing-solutions-for-Microsoft-Azure-Korean-
 - AZ-220T00A-KO-Trainer-Files-Microsoft-Azure-IoT-Developer-Korean-
+- AZ-303T00A-KO-Trainer-Files-Microsoft-Azure-Architect-Technologies-Korean-
+- AZ-304T00A-KO-Trainer-Files-Microsoft-Azure-Architect-Design-Korean-
 - AZ-400T00A-KO-Designing-and-Implementing-Microsoft-DevOps-solutions-Korean-
 - AZ-500T00A-KO-Trainer-Files-Microsoft-Azure-Security-Technologies-Korean-
 - AZ-600T00A-Trainer-Files-Configuring-and-Operating-a-Hybrid-Cloud-with-Microsoft-Azure-Stack-Hub
@@ -38,4 +40,5 @@
 - DP-300T00A-KO-Trainer-Files-Administering-Relational-Databases-on-Microsoft-Azure-Korean-
 - DP-900T00A-KO-Trainer-Files-Microsoft-Azure-Data-Fundamentals-Korean-
 - DP-900T00A-Trainer-Files-Microsoft-Azure-Data-Fundamentals
+---
 - WS-050T00A-KO-Trainer-Files-Migrating-Application-Workloads-to-Azure-Korean-
