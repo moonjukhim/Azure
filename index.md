@@ -25,7 +25,9 @@
 - AZ-700T00A-KO-Trainer-Files-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions-Korean-
 - AZ-900T00A-KO-Trainer-Files-Microsoft-Azure-Fundamentals-2-Day-Korean-
 - AZ-900T01A-KO-Trainer-Files-Microsoft-Azure-Fundamentals-1-Day-Korean-
+---
 - DA-100T00A-KO-Trainer-Files-Analyzing-Data-with-Power-BI-Korean-
+---
 - DP-050T00A-KO-Trainer-Files-Migrate-SQL-workloads-to-Azure-Korean-
 - DP-070T00A-KO-Trainer-Files-Migrate-Open-Source-Data-Workloads-to-Azure-Korean-
 - DP-090T00A-Trainer-Files-Implementing-a-Machine-Learning-Solution-with-Microsoft-Azure-Databricks
