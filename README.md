@@ -18,7 +18,7 @@
 - AZ-020T00A-KO-Trainer-Files-Microsoft-Azure-solutions-for-AWS-developers
 - AZ-030T00A-KO-Trainer-Files-Microsoft-Azure-technologies-for-AWS-architects
 - AZ-040T00A-Trainer-Files-Automating-Administration-with-PowerShell
-- AZ-104T00A-Trainer-Files-Microsoft-Azure-Administrator
+- [AZ-104T00A-Trainer-Files-Microsoft-Azure-Administrator](./AZ-104)
 - AZ-120T00A-Trainer-Files-Planning-and-Administering-Microsoft-Azure-for-SAP-Workloads
 - AZ-140T00A-KO-Trainer-Files-Configuring-and-Operating-Microsoft-Azure-Virtual-Desktop
 - AZ-204T00A-KO-Trainer-Files-Developing-solutions-for-Microsoft-Azure
