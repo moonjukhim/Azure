@@ -26,7 +26,7 @@
 - AZ-303T00A-KO-Trainer-Files-Microsoft-Azure-Architect-Technologies
 - AZ-304T00A-KO-Trainer-Files-Microsoft-Azure-Architect-Design
 - AZ-400T00A-KO-Designing-and-Implementing-Microsoft-DevOps-solutions
-- AZ-500T00A-KO-Trainer-Files-Microsoft-Azure-Security-Technologies
+- [AZ-500T00A-Microsoft-Azure-Security-Technologies](./AZ-500-Security-Technology/README.md)
 - AZ-600T00A-Trainer-Files-Configuring-and-Operating-a-Hybrid-Cloud-with-Microsoft-Azure-Stack-Hub
 - AZ-700T00A-KO-Trainer-Files-Designing-and-Implementing-Microsoft-Azure-Networking-Solutions
 - AZ-900T00A-KO-Trainer-Files-Microsoft-Azure-Fundamentals-2-Day
