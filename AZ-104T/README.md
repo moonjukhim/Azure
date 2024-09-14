@@ -11,3 +11,7 @@
 9. PaaS Compute Options(서버리스 컴퓨팅)
 10. Data Protection(데이터 보호)
 11. Monitoring(모니터링)
+
+---
+
+[AZ-104-Azure-Administrator](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator)
