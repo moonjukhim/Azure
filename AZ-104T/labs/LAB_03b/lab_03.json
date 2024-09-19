@@ -22,7 +22,7 @@
                 "creationData": {
                     "createOption": "Empty"
                 },
-                "diskSizeGB": 16,
+                "diskSizeGB": 10,
                 "diskIOPSReadWrite": 500,
                 "diskMBpsReadWrite": 60,
                 "encryption": {
