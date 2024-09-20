@@ -15,3 +15,19 @@
 ---
 
 [AZ-104-Azure-Administrator](https://github.com/MicrosoftLearning/AZ-104-MicrosoftAzureAdministrator)
+
+---
+
+### 4. Virtual Networing
+
+- Configure virtual networks
+- Configure network security groups
+- Configure Azure Virtual Network peering
+- Configure network routing and endpoints
+- Configure Azure Load Balancer
+- Configure Azure Application Gateway
+- Design an IP addressing schema for your Azure deployment
+- Distribute your services across Azure virtual networks and integrate them by using virtual network peering
+- Host your domain on Azure DNS
+- Manage and control traffic flow in your Azure deployment with routes
+- Improve application scalability and resiliency by using Azure Load Balancer
