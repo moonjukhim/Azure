@@ -2,7 +2,7 @@
     "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-        "virtualNetworks_CoreServicesVnet_name": {
+        "virtualNetworks_ManufacturingVnet_name": {
             "defaultValue": "ManufacturingVnet",
             "type": "String"
         }
@@ -12,7 +12,7 @@
         {
             "type": "Microsoft.Network/virtualNetworks",
             "apiVersion": "2024-01-01",
-            "name": "[parameters('virtualNetworks_CoreServicesVnet_name')]",
+            "name": "[parameters('virtualNetworks_ManufacturingVnet_name')]",
             "location": "koreacentral",
             "properties": {
                 "addressSpace": {
@@ -27,7 +27,7 @@
                 "subnets": [
                     {
                         "name": "SensorSubnet1",
-                        "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_CoreServicesVnet_name'), 'SensorSubnet1')]",
+                        "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_ManufacturingVnet_name'), 'SensorSubnet1')]",
                         "properties": {
                             "addressPrefixes": [
                                 "10.30.20.0/24"
@@ -40,7 +40,7 @@
                     },
                     {
                         "name": "SensorSubnet2",
-                        "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_CoreServicesVnet_name'), 'SensorSubnet2')]",
+                        "id": "[resourceId('Microsoft.Network/virtualNetworks/subnets', parameters('virtualNetworks_ManufacturingVnet_name'), 'SensorSubnet2')]",
                         "properties": {
                             "addressPrefixes": [
                                 "10.30.21.0/24"
@@ -59,13 +59,13 @@
         {
             "type": "Microsoft.Network/virtualNetworks/subnets",
             "apiVersion": "2024-01-01",
-            "name": "[concat(parameters('virtualNetworks_CoreServicesVnet_name'), '/SensorSubnet2')]",
+            "name": "[concat(parameters('virtualNetworks_ManufacturingVnet_name'), '/SensorSubnet2')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_CoreServicesVnet_name'))]"
+                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_ManufacturingVnet_name'))]"
             ],
             "properties": {
                 "addressPrefixes": [
-                    "10.30.20.0/24"
+                    "10.30.21.0/24"
                 ],
                 "delegations": [],
                 "privateEndpointNetworkPolicies": "Disabled",
@@ -75,13 +75,13 @@
         {
             "type": "Microsoft.Network/virtualNetworks/subnets",
             "apiVersion": "2024-01-01",
-            "name": "[concat(parameters('virtualNetworks_CoreServicesVnet_name'), '/SensorSubnet1')]",
+            "name": "[concat(parameters('virtualNetworks_ManufacturingVnet_name'), '/SensorSubnet1')]",
             "dependsOn": [
-                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_CoreServicesVnet_name'))]"
+                "[resourceId('Microsoft.Network/virtualNetworks', parameters('virtualNetworks_ManufacturingVnet_name'))]"
             ],
             "properties": {
                 "addressPrefixes": [
-                    "10.30.21.0/24"
+                    "10.30.20.0/24"
                 ],
                 "delegations": [],
                 "privateEndpointNetworkPolicies": "Disabled",
