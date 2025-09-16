@@ -20,6 +20,7 @@
     - Mount 
 3. Spark Core
 4. Delta Lake
+    - 
 5. 증분처리 및 DLT
 6. Unity Catalog 및 거버넌스
 7. ADF 기반 연동
