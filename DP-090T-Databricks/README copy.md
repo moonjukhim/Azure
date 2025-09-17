@@ -24,6 +24,11 @@
 5. 증분처리 및 DLT
 6. Unity Catalog 및 거버넌스
 7. ADF 기반 연동
+    - formula1/ingestion/1.ingest_circuit_file
+    - 파라미터화
+        - Notebook path
+            - p_data_source : 
+            - p_file_date : 
 8. 시각화 및 대시 보드
 9. 마무리
 
