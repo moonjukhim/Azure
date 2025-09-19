@@ -93,3 +93,15 @@
             - Create table 클릭
         - 테이블이 정상적으로 생성되면 카탈로그에서 demo_schema 밑에 circuits 테이블 목록을 확인할 수 있음
         - 그리고 Storage account에 데이터파일이 생성된 것을 확인할 수 있음
+
+7. Unity Catalog's Benefits
+
+    - Data Discovery
+    - Data Audit
+        - 만약 정보를 가져올 수 없다고 에러가 발생할 경우
+            - 나의 Subscription으로 이동
+            - Resource providers → Microsoft.Insights 검색
+            - Register 클릭 (필요 시 Microsoft.OperationalInsights도 함께 등록)
+            - 상태가 Registered로 바뀌면 진단 설정 화면을 다시 열기
+    - Data Lineage
+    - Data Access Control Overview
