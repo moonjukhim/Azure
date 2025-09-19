@@ -79,5 +79,17 @@
             - Terminate after **20** minutes of inactivity
             - Create compute
 
+6. Create Unity Catalog Object
 
-
+    - 왼쪽 메뉴의 Catalog로 이동
+    - 앞에서 생성한 **databricks_uc_meta** 카탈로그가 존재하는지 확인
+        - Catalog 메뉴에서 databricks_uc_meta를 선택하고 오른쪽 상단의 **Create schema** 클릭
+        - Create a new schema 창이 뜸
+            - Schema name : demo_schema
+            - Storage location : databricks_uc_meta_location
+        - 생성된 demo_schema 이름 옆에 **Create** 버튼을 클릭하고 Table을 선택
+            - 로컬에 가지고 있는 circuits.csv를 업로드
+            - 반드시 이전에 생성한 **databricks_uc_cluster** compute 선택
+            - Create table 클릭
+        - 테이블이 정상적으로 생성되면 카탈로그에서 demo_schema 밑에 circuits 테이블 목록을 확인할 수 있음
+        - 그리고 Storage account에 데이터파일이 생성된 것을 확인할 수 있음
