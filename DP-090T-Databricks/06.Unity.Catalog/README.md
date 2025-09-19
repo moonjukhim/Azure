@@ -23,7 +23,7 @@
                 - Performance : Standard
                 - Redundancy : LRS
             - Advanced
-                - Hierarchical Namespace : Enable hirerarchical namespace 체크
+                - Hierarchical Namespace : **Enable hirerarchical namespace 체크**
             - Create 클릭
 
 3. Access connector 생성
@@ -52,4 +52,32 @@
     
     - databricks-uc-ws 로 이동
     - launch workspace
-        
+        - 왼쪽 메뉴의 **Catalog**로 이동
+        - + 버튼을 클릭하고 Create a catalog 클릭
+            - Catalog name : databricks_uc_meta
+            - Storage location 에서 Create a new external location 클릭
+            - Create a new external location 새로운 페이지로 이동하게 됨
+                - External location name : databricks_uc_meta_location
+                - Storage type : Azure Data Lake Storage
+                - URL을 입력하기 위해 Azure Storage Account에서 container 추가
+                    - Name : metastore
+                - URL : abfss://metastore@databricksuc1103.dfs.core.windows.net (본인의 Storage Account Name을 입력)
+                - Storage credential 에서 입력창 클릭
+                    - + Create new storage credential
+                    - Access connector ID : 이전에 생성한 Connector ID의 **Resource ID 값을 찾아서 입력**
+                - Create 클릭
+            - Storage location 에서 앞에서 생성한 "databricks_uc_meta" 선택
+            - Create 클릭
+    - Databrics Cluster 생성
+        - 왼쪽 메뉴의 **Compute** 로 이동
+        - Create Compute 클릭
+            - 윗부분에서 Simple form을 OFF로 클릭
+            - Single node 선택
+            - Access mode : Standard (Unity Catalog 선택 되는 부분 확인)
+            - Use Photon Acceleration : 해제
+            - Node type : Standard_DS3_v2
+            - Terminate after **20** minutes of inactivity
+            - Create compute
+
+
+
