@@ -38,7 +38,6 @@
 4. Azure Key Vault를 이용한 Azure Data Lake 연결
 
    - Azure Key Vault 생성
-
      - Key Vault로 이동
      - Create 클릭
        - Basics
@@ -99,4 +98,10 @@
      - formula1-app-tenant-id / value에 tenant_id 값 입력
      - formula1-app-client-secret / value에 client_secret 값 입력
 
+   - Storage account의 Access Control(IAM)으로 이동
+     - add/Add role assignment
+      - Role에서 Storage Blob Data Contributor 선택 후, Next
+      - Members에서 + Select members 클릭, formula1-app application을 추가
+        - Select
+      - Review + assign 클릭
    - 2.3.Mount.Databricks.FS 노트북 실행
