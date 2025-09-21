@@ -7,7 +7,7 @@
      - Basics
        - Subscription : [YOUR_SUBSCRIPTION]
        - Resource group : databricks-rg
-       - Storage account name : formula1dl1103 **중복되지 않는 이름**
+       - Storage account name : formula1dl[1103] **중복되지 않는 이름**
        - Region : Korea Central
        - Redundancy : LRS
      - Advanced
@@ -26,7 +26,8 @@
 
    - Access Key
      - abfs driver
-       - abfs[s]://container@storage_account_name.dfs.core.window.net/folder_name/file_name
+       - `abfs[s]://container@storage_account_name.dfs.core.window.net/folder_name/file_name`
+       - `abfs[s]://[CONTAINER_NAME]@[STORAGE_ACCOUNT_NAME].dfs.core.window.net/folder_name/file_name`
      - spark conf
    - 2번 노트북 사용
    - Storage Account
