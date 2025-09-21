@@ -79,7 +79,7 @@
    - Microsoft Entra ID로 이동
    - Manage/App registrations로 이동
 
-     - - New registration 클릭
+     - `+ New registration 클릭`
          - Name : formula1-app
          - Support account types : 디폴트 선택
          - Register 클릭
@@ -87,7 +87,7 @@
        - Application (client) ID --> 노트북에 복사
        - Directory (tenant) ID --> 노트북에 복사 (2.3.Mount.Databricks.FS)
      - Manage의 Certificates & secrets로 이동
-       - - + New client secret 클릭
+       - + New client secret 클릭
            - Description : Formula1 App
            - Expires : 디폴트 선택
            - Add 클릭
