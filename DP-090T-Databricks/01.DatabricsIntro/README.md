@@ -16,10 +16,10 @@
 
 2. Default Catalog Change
 
-   - ~~Settings~~
-     - ~~Advanced~~
-       - ~~Default Catalog에서~~
-         - ~~**hive_metastore** 로 변경~~
+   - Settings
+     - Advanced
+       - Default Catalog에서
+         - **hive_metastore** 로 변경
 
 3. Databricks Clusters
 
