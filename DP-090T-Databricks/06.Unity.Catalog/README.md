@@ -3,7 +3,7 @@
 1. 새로운 Databrics workspace 생성
 
     - Azure Databricks로 이동
-        - + Create 클릭
+        - `+ Create 클릭`
             - Subscription : [YOUR_SUBSCRIPTION]
             - Resource group : databricks-uc-rg 새로 생성
             - Workspace name : databricks-uc-ws
@@ -14,7 +14,7 @@
 2. 새로운 Storage Account 생성
 
     - Storage Account로 이동
-        - + Create 클릭
+        - `+ Create 클릭`
             - Basics 
                 - Subscription : [YOUR_SUBSCRIPTION]
                 - Resource group : databricks-uc-rg
@@ -29,7 +29,7 @@
 3. Access connector 생성
 
     - Access Connector for Azure Databricks
-        - + Create 클릭
+        - `+ Create 클릭`
             - Subscription : [YOUR_SUBSCRIPTION]
             - Resource group : databricks-uc-rg
             - Name : databricks-uc-access
@@ -43,7 +43,7 @@
             - Role에서 Storage Blob Data Contributor 선택
             - Members에서
                 - Managed identity 선택
-                - + Select members
+                - `+ Select members`
                     - Access Connector for Azure Databrics 선택
                     - 이전에 생성한 databricks-uc-access 선택
             - Review + assign 클릭
@@ -53,7 +53,7 @@
     - databricks-uc-ws 로 이동
     - launch workspace
         - 왼쪽 메뉴의 **Catalog**로 이동
-        - + 버튼을 클릭하고 Create a catalog 클릭
+        - `+ 버튼을 클릭하고 Create a catalog 클릭`
             - Catalog name : databricks_uc_meta
             - Storage location 에서 Create a new external location 클릭
             - Create a new external location 새로운 페이지로 이동하게 됨
