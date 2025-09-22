@@ -16,3 +16,11 @@
 
         - Databricks Settings
             - User / Developer / Access Tokens / Generate new token
+
+
+---
+
+## 정리해야 하는 자원
+
+- Resource Group
+- Entra ID App

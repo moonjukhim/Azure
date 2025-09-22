@@ -16,10 +16,10 @@
 
 2. Default Catalog Change
 
-   - ~~Settings~~
-     - ~~Advanced~~
-       - ~~Default Catalog에서~~
-         - ~~**hive_metastore** 로 변경~~
+   - Settings
+     - Advanced
+       - Default Catalog에서
+         - **hive_metastore** 로 변경
 
 3. Databricks Clusters
 
@@ -27,7 +27,7 @@
      - Create compute 클릭
      - Simple form : OFF
      - 연필모양 아이콘을 눌러클러스터 이름을 변경 : databricks-cluster
-     - Access mode : Standard mode
+     - Access mode : Dedicated
      - Use Photon Acceleration : Check 해제
      - Node type : Standard_DS3_V2
      - Terminate : 20

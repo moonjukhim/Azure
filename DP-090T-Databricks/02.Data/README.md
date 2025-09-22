@@ -30,6 +30,7 @@
        - `abfs[s]://[CONTAINER_NAME]@[STORAGE_ACCOUNT_NAME].dfs.core.window.net/folder_name/file_name`
      - spark conf
    - 2번 노트북 사용
+     - 반드시 생성한 Databricks cluster에서 실행되도록 runtime 설정
    - Storage Account
      - Security + networking
        - Access Keys 복사
@@ -37,7 +38,6 @@
 4. Azure Key Vault를 이용한 Azure Data Lake 연결
 
    - Azure Key Vault 생성
-
      - Key Vault로 이동
      - Create 클릭
        - Basics
@@ -48,15 +48,18 @@
          - Pricing tier : Standard
        - Access configuration
          - Permission model : Vault access policy 선택
+          - 관리범위
+            - Azure RBAC : Azure 전역 리소스 수준
+            - Key Vault Access Policy : 특정 Key Vault 내에서만
 
    - Key Vault에 Secret 생성
-
-     - Generate/import 클릭
-     - Update options : Manual
-     - Name : formula1dl-account-key
-     - Scret value : Storage Account의 Access Key
-     - Content type : Storage Account Key
-     - Create 클릭
+     - Object의 Secret으로 이동
+      - Generate/import 클릭
+      - Update options : Manual
+      - Name : formula1dl-account-key
+      - Scret value : Storage Account의 Access Key
+      - Content type(optional) : Storage Account Key
+      - Create 클릭
 
    - Creating Scret Scope
      - Azure Portal에서 Microsoft Azure 옆에 databricks를 클릭
@@ -66,23 +69,24 @@
        - Manage Principal : All users
        - DNS Name : [Vault URI]
        - Resource ID : [Resource ID]
-         - Key Vault의 Properties에서 가져올 수 있음
+         - Key Vault의 Settings 아래의 Properties에서 가져올 수 있음
    - Databricks Secrets Utility (2.2.access_to_data_lake 노트북)
 
 5. Mounting Data Lake Container to Databricks
 
    - Service Principal을 이용하여 Mount
    - Microsoft Entra ID로 이동
-   - App registrations로 이동
+   - Manage/App registrations로 이동
 
-     - - New registration 클릭
+     - `+ New registration 클릭`
          - Name : formula1-app
          - Support account types : 디폴트 선택
+         - Register 클릭
      - 생성된 formula1-app regstration 클릭
        - Application (client) ID --> 노트북에 복사
        - Directory (tenant) ID --> 노트북에 복사 (2.3.Mount.Databricks.FS)
      - Manage의 Certificates & secrets로 이동
-       - - New client secret 클릭
+       - + New client secret 클릭
            - Description : Formula1 App
            - Expires : 디폴트 선택
            - Add 클릭
@@ -92,6 +96,12 @@
 
      - formula1-app-client-id / value에 client_id 값 입력
      - formula1-app-tenant-id / value에 tenant_id 값 입력
-     - formala1-app-client-secret / value에 client_secret 값 입력
+     - formula1-app-client-secret / value에 client_secret 값 입력
 
+   - Storage account의 Access Control(IAM)으로 이동
+     - add/Add role assignment
+      - Role에서 Storage Blob Data Contributor 선택 후, Next
+      - Members에서 + Select members 클릭, formula1-app application을 추가
+        - Select
+      - Review + assign 클릭
    - 2.3.Mount.Databricks.FS 노트북 실행
