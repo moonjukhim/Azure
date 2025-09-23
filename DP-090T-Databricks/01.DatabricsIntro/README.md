@@ -46,3 +46,4 @@
 
 - udemy : [Azure Databricks & Spark For Data Engineers:Hands-on Project](udemy.com/course/azure-databricks-spark-core-for-data-engineers/)
 - O`reily Spark Definitive Guide
+- [Preparing for Google Cloud Certification: Cloud Data Engineer Professional Certificate](https://www.coursera.org/professional-certificates/gcp-data-engineering)
