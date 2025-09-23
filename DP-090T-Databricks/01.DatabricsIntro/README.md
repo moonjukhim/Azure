@@ -39,3 +39,10 @@
      - Create Folder : databricks
      - Create Notebook
        - 반드시 생성되어 있는 cluster에 연결하여 사용
+
+---
+
+# References
+
+- udemy : [Azure Databricks & Spark For Data Engineers:Hands-on Project](udemy.com/course/azure-databricks-spark-core-for-data-engineers/)
+- O`reily Spark Definitive Guide
